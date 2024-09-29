@@ -3,6 +3,8 @@ import Hero from './Hero/Hero'
 import OurServices from './OurService/OurService'
 import ExploreNow from './ExploreNow/ExploreNow'
 import OurBestsellers from './OurBestsellers/OurBestsellers'
+import ExploreEvent from './ExploreEvent/ExploreEvent'
+import Blog from './Blog/Blog'
 
 const Home = () => {
     return (
@@ -11,6 +13,8 @@ const Home = () => {
             <OurServices />
             <ExploreNow />
             <OurBestsellers />
+            <ExploreEvent/>
+            <Blog />
         </section>
     )
 }
