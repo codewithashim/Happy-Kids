@@ -9,6 +9,12 @@ import ShopServiceBanner from "./Banner/shop-service.png";
 import ExploreBanner from "./Banner/explore-banner.png";
 
 import ProductImage from "./Images/product-image.png";
+import EventBannerImage from "./Banner/event-banner.png";
+
+import BlogImage1 from "./BlogBanner/blog-banner-1.png";
+import BlogImage2 from "./BlogBanner/blog_banner-2.png";
+import BlogImage3 from "./BlogBanner/blog_banner-3.png";
+import BlogImage4 from "./BlogBanner/blog_banner-4.png";
 
 export {
     MainLogo,
@@ -20,5 +26,11 @@ export {
     FunLearningServiceBanner,
     ShopServiceBanner,
     ExploreBanner,
-    ProductImage
+    ProductImage,
+    EventBannerImage,
+
+    BlogImage1,
+    BlogImage2,
+    BlogImage3,
+    BlogImage4
 }
