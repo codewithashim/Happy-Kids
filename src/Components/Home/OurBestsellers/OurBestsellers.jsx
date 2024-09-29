@@ -15,7 +15,8 @@ const ProductCard = ({ name, price, description, rating, reviews }) => (
           alt={name}
           width={200}
           height={200}
-          className="w-full h-full p-4 object-cover"
+          layout="responsive"
+          className="p-4 object-cover"
         />
         <button className="absolute top-2 right-2 bg-white rounded-full p-1 text-gray-600 hover:text-red-500 transition-colors duration-300">
           <Heart size={20} />
@@ -53,32 +54,32 @@ const OurBestsellers = () => {
     slidesToScroll: 1,
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 1280,
         settings: {
           slidesToShow: 3,
         }
       },
       {
-        breakpoint: 768,
+        breakpoint: 1024,
         settings: {
           slidesToShow: 2,
         }
       },
       {
-        breakpoint: 480,
+        breakpoint: 640,
         settings: {
           slidesToShow: 1,
         }
       }
     ],
-    prevArrow: <CustomArrow icon={<ChevronLeft size={36} />} direction="left" />,
-    nextArrow: <CustomArrow icon={<ChevronRight size={36} />} direction="right" />
+    prevArrow: <CustomArrow icon={<ChevronLeft />} direction="left" className={"m-2"} />,
+    nextArrow: <CustomArrow icon={<ChevronRight />} direction="right" className={"m-2"} />
   };
 
   return (
-    <div className="py-12">
+    <div className="py-8 md:py-12">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold text-red-500 mb-8">Our Bestsellers</h2>
+        <h2 className="text-2xl md:text-3xl font-bold text-red-500 mb-6 md:mb-8">Our Bestsellers</h2>
         <div className="relative">
           <Slider {...sliderSettings}>
             {products.map((product, index) => (
@@ -93,14 +94,14 @@ const OurBestsellers = () => {
 
 const CustomArrow = ({ className, style, onClick, icon, direction }) => (
   <div
-    className={`${className} z-10 bg-white rounded-full shadow-md p-3 cursor-pointer absolute top-1/2 transform -translate-y-1/2 ${
-      direction === 'left' ? 'left-0 -ml-5' : 'right-0 -mr-5'
-    }`}
+    className={`${className} z-10 bg-white rounded-full shadow-md cursor-pointer absolute top-1/2 transform -translate-y-1/2 
+    ${direction === 'left' ? 'left-0 md:-left-5' : 'right-0 md:-right-5'}
+    w-8 h-8 md:w-10 md:h-10 flex items-center justify-center`}
     style={{ ...style, display: "block" }}
     onClick={onClick}
   >
     <div className="text-black">
-      {icon}
+      {React.cloneElement(icon, { size: 20, className: 'md:w-6 md:h-6' })}
     </div>
   </div>
 );
