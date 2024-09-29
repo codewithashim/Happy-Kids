@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Andada+Pro:ital,wght@0,400..840;1,400..840&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    font-family: 'Andada Pro', serif;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Andada Pro', serif;
+}
+
+.container {
+    max-width: 1420px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+// ========= hero section =========
+
+.hero-section {
+    width: 100% !important;
+    background: url("../src/Assets/Images/hero-banner.png") no-repeat center center/cover;
+}
