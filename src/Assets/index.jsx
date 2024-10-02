@@ -25,7 +25,10 @@ import LearningHero_5 from "./LearningZoneBanner/learning-zone-hero-5.png";
 import WhyChoseBanner_1 from "./Banner/why-chose-1.png";
 import WhyChoseBanner_2 from "./Banner/why-chose-2.png";
 import WhyChoseBanner_3 from "./Banner/why-chose-3.png";
-import QuickBannerWhyChose from "./Banner/quick-tutorial-banner.png"
+import QuickBannerWhyChose from "./Banner/quick-tutorial-banner.png";
+
+import BlogBanner from "./BlogBanner/blog-banner.png";
+import BlogDetailsPageBanner from "./BlogBanner/blog-details-banner.png"
 
 export {
     MainLogo,
@@ -54,5 +57,7 @@ export {
     WhyChoseBanner_1,
     WhyChoseBanner_2,
     WhyChoseBanner_3,
-    QuickBannerWhyChose
+    QuickBannerWhyChose,
+    BlogBanner,
+    BlogDetailsPageBanner
 }
