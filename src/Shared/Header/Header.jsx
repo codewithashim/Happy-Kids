@@ -12,7 +12,6 @@ const Header = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
 
-  // Menu items array
   const menuItems = [
     { name: 'Home', href: '/' },
     {
@@ -66,7 +65,6 @@ const Header = () => {
           </Link>
         </div>
 
-        {/* Desktop Menu */}
         <nav className="hidden md:flex space-x-6 items-center">
           {menuItems.map((item) => renderMenuItem(item))}
         </nav>
@@ -75,14 +73,12 @@ const Header = () => {
           <Button href="/join" variant="primary">Join Us Now</Button>
         </div>
 
-        {/* Mobile Menu Button */}
         <button onClick={toggleMobileMenu} className="md:hidden text-gray-700">
           <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
           </svg>
         </button>
 
-        {/* Mobile Menu */}
         {isMobileMenuOpen && (
           <nav className="absolute top-16 left-0 w-full bg-white shadow-lg md:hidden">
             <ul className="flex flex-col items-start px-6 space-y-4 py-6">
